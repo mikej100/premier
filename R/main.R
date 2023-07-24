@@ -11,3 +11,4 @@ read_results_and_predictions <- function (filename) {
 brier_score <- function(fcst, actual) {
   (sum( (fcst - actual)^2) ) /length(fcst)
 }
+

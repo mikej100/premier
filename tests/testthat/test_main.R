@@ -36,4 +36,6 @@ test_that("Brier scores of odds",{
   bs_d_fcst <- brier_score(data$Fcast.Draw.P, as.numeric(data$Result=="D"))
   bs_a_fcst <- brier_score(data$Fcast.Away.P, as.numeric(data$Result=="A"))
 })
-  
+
+
+test_that("")  
