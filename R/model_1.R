@@ -3,8 +3,10 @@
 #
 library(Rlab)
 library(dplyr)
-library("ggplot2")
+library(ggplot2)
+library(usethis)
 
+use_test()
 # Additional factor is const times wins in last n games
 
 # 100 teams
@@ -53,4 +55,7 @@ ggplot( data= tibble(x=0:1), aes(x)) +
 ggplot(tibble(x=mi), aes(x=x)) + geom_histogram()
 rbinom(n, 1, mi)
 mi > 1
-mi[>1]
+
+mod_recent_1 <- function(base, delta) {
+  base + ((1-base) * delta)
+}
